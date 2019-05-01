@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Matbr</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
-    <script src='assets/js/script.js'></script>
+    <meta name="description" content="Linguagem de programação matemática com sintaxe na língua portuguesa.">
+    <meta name="author" content="Sávio Andres">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src='script.js'></script>
+    <script> 
+        $(function(){
+            $("#header").load("include/header.html"); 
+            $("#nav").load("include/nav.html"); 
+        });
+    </script>
 </head>
 <body>
-    <header>
-        <div id="contentHead">
-            <h1>Matbr</h1>
-            <p>Linguagem de programação matemática com sintaxe na língua portuguesa.</p>
-            <button class="buttonMain">Download</button>
-        </div>
-    </header>
-
+    <div id="header"></div>
+    <div id="nav"></div>
     <div id="content">
         <p>Testes...</p>
     </div>
-
 </body>
 </html>
