@@ -1,6 +1,6 @@
 $(function() {
     $("header").load("include/header.html"); 
-    $("nav").load("include/nav.html"); 
+    //$("nav").load("include/nav.html"); 
 });
 
 $(document).ready(function() {
