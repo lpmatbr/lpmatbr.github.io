@@ -15,21 +15,21 @@
     $("header").load("include/header.html"); 
     $("nav").load("include/nav.html"); 
 });
-
-$(document).ready(function() {
-    $("nav a").click(function( e ) {
-        e.preventDefault();
-        var href = $( this ).attr('href');
-        $("#content").load( href +" #content");
-    });
-});
+        
+        $(document).ready(function(){
+		$("#menu a").click(function( e ){
+			e.preventDefault();
+			var href = $( this ).attr('href');
+			$("#content").load( href +" #content");
+		});
+	});
     </script>
 </head>
 <body>
     <header></header>
     <nav>
     <div class="content">
-    <ul>
+    <ul id="menu">
         <li><a href="index.html">Início</a></li>
         <li><a href="document.html">Documentação</a></li>
         <li><a href="#">Sobre</a></li>
