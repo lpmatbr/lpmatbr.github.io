@@ -9,7 +9,21 @@
     <meta name="author" content="Sávio Andres">
     <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src='assets/js/script.js'></script>
+    <!--<script src='assets/js/script.js'></script>-->
+    <script>
+        $(function() {
+    $("header").load("include/header.html"); 
+    $("nav").load("include/nav.html"); 
+});
+
+$(document).ready(function() {
+    $("nav a").click(function( e ) {
+        e.preventDefault();
+        var href = $( this ).attr('href');
+        $("#content").load( href +" #content");
+    });
+});
+    </script>
 </head>
 <body>
     <header></header>
